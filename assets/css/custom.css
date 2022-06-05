@@ -1,0 +1,251 @@
+.green{
+  color: #00b74a ;
+}
+.bold{
+  font-weight: bold;
+}
+.margin-center{
+  display: block;
+  margin: 0 auto;
+}
+.form-control.error{
+  border: 1px solid brown;
+}
+.form-control.error:focus{
+  border: 2px solid brown;
+}
+#intro{
+  margin-top: 70px;
+}
+.weights{
+  display: flex;
+}
+.weights .item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 50px;
+  width: 100%;
+  height: 50px;
+  margin-left: 2px;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.weights .item:hover .hint{
+  display: block;
+}
+.weights .item.four{
+  max-width: 100px;
+  width: 100%;
+  height: 50px;
+}
+.weights .num_kg {
+    /*display: flex;
+    flex-direction: column;*/
+  }
+  .weights .num_kg div{
+    line-height: 1;
+  }
+  .weights .more img{
+    transform: rotate(90deg);
+  }
+  .weights .more img.rotate-90{
+    transform: rotate(-90deg);
+  }
+  .item.border.rounded.hide{
+    display: none;
+  }
+
+  .item.border.rounded.active{
+    border: 1px solid #009be7 !important;
+  }
+  .item.border.rounded.active:before{
+    content: url(/assets/img/svg/checkmark.svg);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    z-index: 9;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    background: #009be7;
+  }
+
+  .hint{
+    display: none;
+    position: absolute;
+    color: black;
+    background-color: #fff;
+    top: -62px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 10px;
+    border: 1px solid #009be7 ;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .hint.shipping{
+    top: -98px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .hint:before{
+    content: url(/assets/img/svg/triangledown.svg);
+    position: absolute;
+    width: 10px;
+    bottom: -12px;
+  }
+  .free_shipping{
+   background-color: #33a50f;
+   padding: 5px;
+   margin-top: 5px;
+   color: #fff;
+ }
+
+ .desc_slide_top{
+  margin-top: 20px;
+  margin-bottom: 10px;
+} 
+.desc_slide{
+  text-align: center;
+  background: gainsboro;
+}
+.desc_slide .title{
+  font-size: 15px;
+font-weight: bold;
+}
+.filling.sliders{
+ position: relative;
+}
+
+.filling.sliders img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.filling.sliders .slider{
+  margin-right: 3px;
+  margin-left: 3px;
+  opacity: .3;
+}
+.expand_less_right{
+  transform: rotate(90deg);
+}.expand_less_left{
+  transform: rotate(-90deg);
+}
+
+.filling.sliders .expand_less_left{
+  width: 25px;
+  position: absolute;
+  left: 0;
+  z-index: 9;
+  top: calc(50% - 11px);
+}
+.filling.sliders .expand_less_right{
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 11px);
+}
+
+.modal-dialog.filling{
+  max-width: 900px;
+}
+.menu_filling{
+  padding-left: 10px;
+}
+
+.choose{
+  font-weight: bold;
+  font-size: 16px;
+}
+.all_filling{
+  text-align: end;
+}
+.all_filling span{
+  font-size: 12px;
+  border-bottom: 1px dashed #4f4f4f;
+  text-align: end;
+  cursor: pointer;
+}
+.currency_price_desc{
+  display: flex;
+  align-items: center;
+}
+.currency_price_desc .currency{
+  font-size: 55px;
+  color: red;
+}
+.currency_price_desc .currency.blue{
+  color: #009be7 ;
+}
+.currency_price_desc .price_desc{
+  font-size: 14px;
+}
+.shipping_desc{
+  text-align: center;
+  font-size: 11px;
+}
+
+.shipping_desc div{
+  display: none;
+}
+.shipping_desc div.first{
+  display: block;
+}
+.sticky-top .price{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.parametrs{
+  max-width: 480px;
+}
+.parametrs .item{
+  display: flex;
+  margin-top: 10px;
+}
+.parametrs .item .param{
+  max-width: max-content;
+  width: 100%;
+}
+.parametrs .item .doted{
+  border-bottom: 2px dotted;
+  width: 100%;
+  margin-bottom: 7px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.parametrs .item .property{
+  max-width: max-content;
+  width: 100%;
+}
+
+.form_order_block{
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#formOrder{
+  margin-top: 20px;
+}
+.formModalTitleOrder{
+  margin: 0 auto;
+}
+.cake_price{
+  margin-top: 20px;
+}
+
+.insertWeightsSlide{
+  display: none;
+}
+
+.filling .slick-dots{
+  display: none !important;
+}

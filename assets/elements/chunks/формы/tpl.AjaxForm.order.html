@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="modal-header">
+            <div class="h2 formModalTitleOrder">Оформление заказа</div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="col-8 form_order_block">
+            <div class="row">
+                <div class="col">
+
+                    <div class="col">
+                        <img class="w-25" src="[[*image]]" alt="[[*pagetitle]]">
+                    </div>
+
+                    <div class="cake_price">
+                        <div class="h5">[[*pagetitle]]</div>
+                        <span class="bold">Цена:</span> <span class="insertPrice"></span> р.
+                    </div>
+                    <div class="cake_weight">
+                        <span class="bold">Вес торта:</span> <span class="insertKg"></span> кг <a href="#">сменить</a>
+                        <div class="tt"></div>
+                        <div class="insertWeightsSlide"></div>
+                    </div>
+                    <div>
+                        <span class="bold">Начинка:</span> <span class="insertTitleFiling"></span> <a href="#"  data-id="9" class="get_filling" data-bs-toggle="modal" data-bs-target="#exampleModal" tabindex="0">сменить</a>
+<!--                        <div><img class="w-25 imgFiling" src="" alt=""></div>-->
+                    </div>
+                    <!--					<div>Надпись: Без надписи</div>-->
+                </div>
+            </div>
+            <form id="formOrder" action="[[~[[*id]]? &scheme=`full`]]" method="post">
+                <input type="hidden" name="checkbox" value="">
+
+                <input type="hidden" name="id_product" value="[[*id]]">
+                <input type="hidden" name="title" value="[[*pagetitle]]">
+                <input type="hidden" name="weight" value="">
+                <input type="hidden" name="filling" value="">
+                <input type="hidden" name="inscription" value="Без надписи">
+                <div class="mb-3">
+                    <input type="name" name="name" class="form-control" id="form_name_order"
+                           aria-describedby="emailHelp" placeholder="Введите имя">
+                    <span class="error_name"></span>
+                </div>
+                <div class="mb-3">
+                    <input type="tel" name="tel" class="form-control" id="form_tel_order"
+                           placeholder="+7(999) 999-9999">
+                    <span class="error_tel"></span>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" name="checkbox" id="exampleCheck1">
+                    <label class="form-check-label checkbox" for="exampleCheck1">Я согласен на обработку персональных
+                        данных</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary orderSubmit">Заказать</button>
+
+            </form>
+        </div>
+    </div>
+</div>

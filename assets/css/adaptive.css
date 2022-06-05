@@ -1,0 +1,26 @@
+@media(max-width: 768px){
+	.fixed_my{
+		position: fixed;
+		top: 45px;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background: #fff;
+		padding-top: 15px;
+	}
+	.adaptive_replace_js{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.adaptive_replace_js .price_kg{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.adaptive_replace_js .price{
+		font-size: 32px;
+		font-weight: bold;
+		margin-right: 20px;
+	}
+}

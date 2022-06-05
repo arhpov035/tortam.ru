@@ -1,0 +1,18 @@
+<!-- Modal -->
+<div class="modal fade" id="placeOrderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered filling">
+    <div class="modal-content">
+      [[!AjaxForm?
+          &snippet=`FormIt`
+          &form=`tpl.AjaxForm.order`
+          &hooks=`email`
+          &emailSubject=`Тестовое сообщение`
+          &emailTo=`arhipov035@gmail.com`
+        &emailFrom=`info@tortam.ru`
+          &validate=`name:required,tel:required,checkbox:required`
+          &validationErrorMessage=`В форме содержатся ошибки!`
+          &successMessage=`Сообщение успешно отправлено`
+      ]]
+    </div>
+  </div>
+</div>
